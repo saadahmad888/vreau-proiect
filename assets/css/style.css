@@ -1,0 +1,589 @@
+@import url(./variables.css);
+
+
+
+/* -------------------------------------------------------------------------------
+
+    Helping CSS / General Classes
+
+----------------------------------------------------------------------------------*/
+body{
+    font-family: 'Inter', sans-serif;
+}
+p{
+    font-family: 'Inter', sans-serif;
+    margin-bottom: 0;
+}
+a{
+    text-decoration: none;
+}
+
+
+
+.section-heading{
+    font-family: 'Rubik', sans-serif;
+    color: var(--primary);
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+
+
+
+.btn-primary{
+    border-radius: 6px!important;
+    background: var(--primary);
+    border: 1px solid var(--primary);
+    transition: 0.3s all ease;
+    padding: 10px 20px;
+}
+.btn-primary:hover{
+    color: var(--primary);
+    background: transparent;
+    border: 1px solid var(--primary);
+}
+
+
+
+
+/* -------------------------------------------------------------------------------
+
+    Top header Nav CSS
+
+----------------------------------------------------------------------------------*/
+.top-nav{
+    border-bottom: 1px solid var(--light-border-color);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.top-nav .content p{
+    font-size: 14px;
+    color: var(--primary);
+}
+.top-nav .content p a{
+    font-size: 14px;
+    color: var(--black);
+}
+
+
+/* -------------------------------------------------------------------------------
+
+    Main Navbar CSS
+
+----------------------------------------------------------------------------------*/
+.main-nav .nav-link{
+    color: var(--nav-links);
+    font-family: 'Inter', sans-serif;
+    transition: 0.3s all ease;
+}
+.main-nav .nav-link:hover{
+    color: var(--primary);
+}
+.main-nav .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: var(--primary);
+    font-weight: 500;
+}
+
+
+/* -------------------------------------------------------------------------------
+
+    Main Banner CSS
+
+----------------------------------------------------------------------------------*/
+.main-banner{
+    background: var(--banner-gradient);
+    padding: 50px 0px 50px 0px;
+}
+.main-banner h1{
+    color: var(--nav-links);
+    font-family: 'Rubik', sans-serif;
+    font-size: 45px;
+    font-weight: 400;
+    line-height: 50px;
+    margin-bottom: 20px;
+}
+.main-banner p{
+    color: var(--header-text);
+    font-weight: 400;
+}
+.banner-text-btn{
+    color: var(--primary);
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgba(0, 51, 102, 0.40);
+    transition: 0.3s all ease;
+}
+.banner-text-btn:hover{
+    border-color: var(--primary);
+}
+/* -------------------------------------------------------------------------------
+
+    First Section CSS
+
+----------------------------------------------------------------------------------*/
+.first-sec-box{
+    padding: 66.41px 40px 66.4px 40px;
+    text-align: center;
+    border-radius: 8px;
+    background: var(--white);
+    box-shadow: 0px 0px 20px 0px rgba(20, 47, 126, 0.13);
+    margin-bottom: 50px;
+}
+.first-sec-box .title{
+    font-family: 'Rubik', sans-serif;
+    color: var(--text);
+    font-size: 22px;
+    font-weight: 600;
+}
+.first-sec-box .description{
+    margin-bottom: 20px;
+    color: var(--text);
+}
+.first-sec-box .description span{
+    color: var(--primary);
+}
+.color-text{
+    color: var(--text);
+    font-weight: 600;
+}
+
+
+
+
+
+
+/* -------------------------------------------------------------------------------
+
+   Testimonial Section CSS
+
+----------------------------------------------------------------------------------*/
+.testimonial-item{
+    margin-bottom: 30px;
+}
+.testimonial-item .title{
+    color: #263238;
+    font-family: 'Rubik', sans-serif;
+    font-size: 20px;
+}
+.testimonial-item .sub-title{
+    color: var(--text);
+    font-weight: 400;
+    font-size: 13px;
+}
+.testimonial-item .description{
+    font-weight: 600;
+    color: var(--text);
+}
+
+/* -------------------------------------------------------------------------------
+
+    Site Footer CSS
+
+----------------------------------------------------------------------------------*/
+.site-footer{
+    background-color: #14307F;
+    background-image: url(../images/footer-bg.svg);
+    background-size: 100%;
+    background-position: center center;
+    padding: 70px 0 30px 0;
+}
+.site-footer .main-description{
+    color: var(--white);
+    font-weight: 300;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+.footer-heading{
+    color: var(--primary);
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.footer-links ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.footer-links ul li{
+    margin-bottom: 10px;
+}
+.footer-links ul li a{
+    color: var(--white);
+    font-weight: 300;
+    font-size: 14px;
+}
+.footer-address .title{
+    color: var(--white);
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+}
+.footer-address .description{
+    color: rgba(255, 255, 255, 0.50);
+    font-family: Inter;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+}
+.bottom-footer{
+    margin-top: 50px;
+    border-top: 1px solid rgba(255, 255, 255, 0.19);
+    padding-top: 30px;
+}
+.copy-right-text{
+    color: var(--white);
+    font-weight: 300;
+    font-size: 15px;
+}
+.bottom-footer a{
+    color: var(--white);
+    font-weight: 300;
+    font-size: 15px;
+}
+
+
+/* -------------------------------------------------------------------------------
+
+    top Pagination CSS
+
+----------------------------------------------------------------------------------*/
+.top-pagination{
+    background: linear-gradient(180deg, #E1F5FE 0%, #FFF 100%);
+    padding: 30px;
+}
+.top-pagination .pagination-title{
+    color: #000;
+    font-family: 'Rubik', sans-serif;
+    font-size: 30px;
+}
+.top-pagination .pagination-desciption{
+    color: #000;
+    font-family: 'Rubik', sans-serif;
+    font-size: 20px;
+}
+.top-pagination .pagination-heading{
+    color: #0B7BC3;
+    font-size: 18px;
+    border-left: 3px solid rgba(11, 123, 195, 0.40);
+    padding-left: 20px;
+}
+.top-pagination .pagination-links{
+    font-size: 18px;
+    color: #0B7BC3;
+}
+.top-pagination i{
+    color: rgba(11, 123, 195, 0.40);
+    font-size: 20px;
+}
+
+/* -------------------------------------------------------------------------------
+
+    Contact Page CSS
+
+----------------------------------------------------------------------------------*/
+.contact-page-sec{
+    background-image: url('../images/blob-scene-wide-simple.svg');
+    padding-top: 50px;
+    bottom: 20px;
+}
+.contact-card{
+    text-align: center;
+    padding: 50px 15px;
+    margin-bottom: 30px;
+}
+.contact-card .title{
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--black);
+    margin-bottom: 5px;
+}
+.contact-card .description{
+    color: #90A4AE;
+    font-weight: 600;
+}
+.contact-form{
+    padding: 100px 0;
+}
+.contact-form label{
+    color: #263238;
+    font-size: 16px;
+    font-weight: 400;
+}
+.contact-form label .req-star{
+    color: #55CAFF;
+}
+
+.contact-form .form-control{
+    border-radius: 5px;
+    border: 1px solid rgba(207, 216, 220, 0.62);
+    background: #FAFBFC;
+    min-height: 42px;
+}
+.contact-form .form-control:focus{
+    box-shadow: none;
+    border-color: #0B7BC3;
+}
+.contact-form .form-control::placeholder{
+    color: #A5ABAE;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+
+
+/* -------------------------------------------------------------------------------
+
+    Filter Page CSS
+
+----------------------------------------------------------------------------------*/
+.filter-sec{
+    padding: 100px 0px;
+}
+.filter-top-text{
+    border-bottom: 1px solid #0B7BC3;
+    margin-bottom: 50px;
+    padding: 10px 0px 10px 0px;
+}
+.filter-top-text p{
+    color: #000;
+    font-family: 'Rubik', sans-serif;
+    font-size: 17.5px;
+    font-weight: 400;
+    letter-spacing: 0.175px;
+    margin-bottom: 0!important;
+}
+.filter-main-card{
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.13);
+    padding: 20px 30px;
+    margin-bottom: 30px;
+}
+.filter-main-card .title{
+    color: #000;
+    font-family: 'Rubik', sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: 0.32px;
+    margin-bottom: 0;
+}
+
+
+
+
+
+
+
+.filter-box{
+    border-radius: 5px;
+    border: 1px solid #F1F1F2;
+    background: #FFF;
+    box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.03);
+    padding: 50px 0;
+    margin-bottom: 50px;
+}
+.title-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 30px;
+}
+.title-box .title{
+    color: #000;
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+
+}
+.filter-status-icn{
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-radius: 7.5px;
+    background: #E23C3C;
+}
+.filter-status-icn.green{
+    background-color: #50CD89;
+}
+
+
+.filter-dropdown-btn{
+    border: 1.5px solid #000;
+    border-radius: 4px;
+    background-color: transparent;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+    color: #92959C;
+}
+.filter-dropdown-btn i{
+    color: #000;
+}
+
+.filter-dropdown-box{
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 0px 7px 15px 0px rgba(24, 31, 89, 0.15);
+    width: 100%;
+    padding: 10px 15px;
+}
+.filter-dropdown-box ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.filter-dropdown-box ul li a{
+    color: #000;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0.14px;
+    padding: 15px 20px;
+    display: block;
+    border-radius: 4px;
+}
+.filter-dropdown-box ul li a:hover,
+.filter-dropdown-box ul li a.active{
+    background: rgba(11, 123, 195, 0.15);
+}
+
+
+
+.filter-dropdown-box .search-box{
+    margin-bottom: 20px;
+}
+
+.filter-dropdown-box .search-box .input-group-text{
+    background-color: transparent;
+    border-color: #000;
+    border-left: 0;
+    border-width: 1.5px;
+}
+
+.filter-dropdown-box .search-box .form-control{
+    border-right: none;
+    border-width: 1.5px;
+    border-color: #000;
+}
+.filter-dropdown-box .search-box .form-control:focus{
+    box-shadow: none;
+    overflow: hidden;
+}
+
+.filter-dropdown-box .checkbox-div{
+    max-height: 200px;
+    overflow-y: scroll;
+}
+.filter-dropdown-box .checkbox-div .form-check{
+    padding: 15px 30px;
+    display: block;
+    transition: 0.3s all ease;
+    border: 1.5px solid transparent;
+    margin-bottom: 10px;
+}
+.filter-dropdown-box .checkbox-div .form-check:hover{
+    border: 1.5px solid #000;
+    border-color: #000;
+    border-radius: 4px;
+    background-color: #D9EBF6;
+}
+.filter-dropdown-box .checkbox-div .form-check-input{
+    width: 20px;
+    height: 20px;
+}
+.filter-dropdown-box .checkbox-div .form-check-input:focus{
+    box-shadow: none;
+    border-color: #0B7BC3;
+}
+.filter-dropdown-box .checkbox-div .form-check-input:checked{
+    background-color: #0B7BC3;
+    border-color: #0B7BC3;
+}
+
+.filter-dropdown-box .checkbox-div::-webkit-scrollbar-track
+{
+	/* -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); */
+	border-radius: 10px;
+	/* background-color: #F5F5F5; */
+    background: rgba(217, 217, 217, 0.40);
+}
+
+.filter-dropdown-box .checkbox-div::-webkit-scrollbar
+{
+	width: 12px;
+	/* background-color: #F5F5F5; */
+    background: rgba(217, 217, 217, 0.40);
+}
+
+.filter-dropdown-box .checkbox-div::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: rgba(11, 123, 195, 0.50)
+}
+
+
+
+
+
+
+
+
+
+/* -------------------------------------------------------------------------------
+
+    Auth Page CSS
+
+----------------------------------------------------------------------------------*/
+#auth-page-sec{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.auth-card{
+    background: rgba(207, 216, 220, 0.14);
+    padding: 30px 40px;
+}
+.auth-card h2{
+    color: #0B7BC3;
+    font-family: 'Rubik', sans-serif;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36.4px;
+    margin-bottom: 25px;
+}
+.auth-card h3{
+    color: #263238;
+    font-family: 'Rubik', sans-serif;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36.4px;
+    margin-bottom: 25px;
+}
+.auth-card label{
+    color: #0B7BC3;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27.2px; 
+}
+.auth-card .form-control{
+    min-height: 46px;
+    border-radius: 5px;
+    border: 1px solid rgba(11, 123, 195, 0.62);
+    background: #FAFBFC;
+}
+.auth-card .form-control:focus{
+    box-shadow: none;
+    border-color: rgba(11, 123, 195, 0.62);
+}
+.auth-form-box a{
+    color: #0B7BC3;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27.2px; 
+}
